@@ -1,0 +1,340 @@
+Script started on Mon 19 Mar 2018 07:55:27 AM UTC
+]0;kivy@kivyvm: ~/Projects/CalcGame[01;32mkivy@kivyvm[00m:[01;34m~/Projects/CalcGame[00m$ exitbuildozer android debug deploy run logcat
+[39m[0m[36m# Check configuration tokens[39m[0m
+[39m[0m[36m# Ensure build layout[39m[0m
+[39m[0m[30m[1m# Create directory /home/kivy/Projects/CalcGame/bin[39m[0m
+[39m[0m[36m# Check configuration tokens[39m[0m
+[39m[0m[36m# Preparing build[39m[0m
+[39m[0m[36m# Check requirements for android[39m[0m
+[39m[0m[30m[1m# Run 'dpkg --version'[39m[0m
+[39m[0m[30m[1m# Cwd None[39m[0m
+Debian 'dpkg' package management program version 1.18.10 (amd64).
+This is free software; see the GNU General Public License version 2 or
+later for copying conditions. There is NO warranty.
+[39m[0m[30m[1m# Search for Git (git)[39m[0m
+[39m[0m[30m[1m#  -> found at /usr/bin/git[39m[0m
+[39m[0m[30m[1m# Search for Cython (cython)[39m[0m
+[39m[0m[30m[1m#  -> found at /usr/local/bin/cython[39m[0m
+[39m[0m[30m[1m# Search for Java compiler (javac)[39m[0m
+[39m[0m[30m[1m#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/bin/javac[39m[0m
+[39m[0m[30m[1m# Search for Java keytool (keytool)[39m[0m
+[39m[0m[30m[1m#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool[39m[0m
+[39m[0m[36m# Install platform[39m[0m
+[39m[0m[30m[1m# Run 'pip install -q --user "appdirs" "colorama>=0.3.3" "sh>=1.10,<1.12.5" "jinja2" "six"'[39m[0m
+[39m[0m[30m[1m# Cwd None[39m[0m
+[39m[0m[36m# Apache ANT found at /home/kivy/.buildozer/android/platform/apache-ant-1.9.4[39m[0m
+[39m[0m[36m# Android SDK found at /home/kivy/.buildozer/android/platform/android-sdk-20[39m[0m
+[39m[0m[36m# Android NDK found at /home/kivy/.buildozer/android/platform/android-ndk-r9c[39m[0m
+[39m[0m[36m# Check application requirements[39m[0m
+[39m[0m[36m# Check garden requirements[39m[0m
+[39m[0m[36m# Compile platform[39m[0m
+[39m[0m[30m[1m# Run '/usr/bin/python -m pythonforandroid.toolchain create --dist_name=calcgame --bootstrap=sdl2 --requirements=kivy,android --arch armeabi-v7a --copy-libs --color=always --storage-dir=/home/kivy/Projects/CalcGame/.buildozer/android/platform/build'[39m[0m
+[39m[0m[30m[1m# Cwd /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m[0m
+[1m[INFO][0m:    Will compile for the following archs: armeabi-v7a
+[1m[INFO][0m:    Found Android API target in $ANDROIDAPI
+[1m[INFO][0m:    Available Android APIs are (19)
+[1m[INFO][0m:    Requested API target 19 is available, continuing.
+[1m[INFO][0m:    Found NDK dir in $ANDROIDNDK
+[1m[INFO][0m:    Got NDK version from $ANDROIDNDKVER
+[1m[INFO][0m:    Using Google NDK r9c
+[1m[INFO][0m:    Found virtualenv at /usr/local/bin/virtualenv
+[1m[INFO][0m:    ccache is missing, the build will not be optimized in the future.
+[1m[INFO][0m:    Found the following toolchain versions: ['4.6', '4.8', 'clang3.3']
+[1m[INFO][0m:    Picking the latest gcc toolchain, here 4.8
+[1m[31m[WARNING][39m[0m: Missing executable: autoconf is not installed
+[1m[31m[WARNING][39m[0m: Missing executable: automake is not installed
+[1m[31m[WARNING][39m[0m: Missing executable: libtoolize is not installed
+[1m[INFO][0m:    No existing dists meet the given requirements!
+[1m[INFO][0m:    [1m[94mNo dist exists that meets your requirements, so one will be built.[0m
+[1m[INFO][0m:    Found multiple valid dependency orders:
+[1m[INFO][0m:        ['hostpython2', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'python2', 'sdl2', 'six', u'android', 'pyjnius', u'kivy']
+[1m[INFO][0m:        ['hostpython3crystax', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'python3crystax', 'sdl2', 'six', u'android', 'pyjnius', u'kivy']
+[1m[INFO][0m:        ['hostpython2', 'pygame_bootstrap_components', 'python2', 'sdl', 'six', 'pygame', 'pyjnius', u'android', u'kivy']
+[1m[INFO][0m:    Using the first of these: ['hostpython2', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'python2', 'sdl2', 'six', u'android', 'pyjnius', u'kivy']
+[1m[INFO][0m:    The selected bootstrap is sdl2_gradle
+[1m[INFO][0m:    [1m[32m# Creating dist with sdl2_gradle bootstrap[0m[39m
+[1m[INFO][0m:    [1m[94mDist will have name calcgame and recipes (kivy, android)[0m
+[1m[INFO][0m:    Dist will also contain modules () installed from pip
+[1m[INFO][0m:    [90m->[0m running cp -r /home/kivy/Projects/Calc...(and 210 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/bootstrap_builds/sdl2_gradle-python2[39m
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[94mRecipe build order is ['hostpython2', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'python2', 'sdl2', 'six', u'android', 'pyjnius', u'kivy'][0m
+[1m[INFO][0m:    [1m[32m# Downloading recipes [0m[39m
+[1m[INFO][0m:    [1m[32mDownloading hostpython2[0m[39m
+[1m[INFO][0m:    [90m->[0m running mkdir -p /home/kivy/Projects/C...(and 62 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/packages/hostpython2[39m
+[1m[INFO][0m:    [90m->[0m running basename https://python.org/ftp...(and 34 more)[0m
+[1m[INFO][0m:    hostpython2 download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mDownloading sdl2_image[0m[39m
+[1m[INFO][0m:    [90m->[0m running mkdir -p /home/kivy/Projects/C...(and 61 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/packages/sdl2_image[39m
+[1m[INFO][0m:    [90m->[0m running basename https://www.libsdl.or...(and 52 more)[0m
+[1m[INFO][0m:    sdl2_image download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mDownloading sdl2_mixer[0m[39m
+[1m[INFO][0m:    [90m->[0m running mkdir -p /home/kivy/Projects/C...(and 61 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/packages/sdl2_mixer[39m
+[1m[INFO][0m:    [90m->[0m running basename https://www.libsdl.or...(and 52 more)[0m
+[1m[INFO][0m:    sdl2_mixer download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mDownloading sdl2_ttf[0m[39m
+[1m[INFO][0m:    [90m->[0m running mkdir -p /home/kivy/Projects/C...(and 59 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/packages/sdl2_ttf[39m
+[1m[INFO][0m:    [90m->[0m running basename https://www.libsdl.org...(and 48 more)[0m
+[1m[INFO][0m:    sdl2_ttf download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mDownloading python2[0m[39m
+[1m[INFO][0m:    [90m->[0m running mkdir -p /home/kivy/Projects/C...(and 58 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/packages/python2[39m
+[1m[INFO][0m:    [90m->[0m running basename https://python.org/ftp...(and 34 more)[0m
+[1m[INFO][0m:    python2 download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mDownloading sdl2[0m[39m
+[1m[INFO][0m:    [90m->[0m running mkdir -p /home/kivy/Projects/C...(and 55 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/packages/sdl2[39m
+[1m[INFO][0m:    [90m->[0m running basename https://www.libsdl.org...(and 26 more)[0m
+[1m[INFO][0m:    sdl2 download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mDownloading six[0m[39m
+[1m[INFO][0m:    [90m->[0m running mkdir -p /home/kivy/Projects/C...(and 54 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/packages/six[39m
+[1m[INFO][0m:    [90m->[0m running basename https://pypi.python.or...(and 40 more)[0m
+[0m
+           working: Python-2.7.2.tar.bz2                                       [0m
+                                                                               
+[0m
+           working: SDL2_image-2.0.1.tar.gz                                    [0m
+                                                                               
+[0m
+           working: SDL2_mixer-2.0.1.tar.gz                                    [0m
+                                                                               
+[0m
+           working: SDL2_ttf-2.0.14.tar.gz                                     [0m
+                                                                               
+[0m
+           working: Python-2.7.2.tar.bz2                                       [0m
+                                                                               
+[0m
+           working: SDL2-2.0.4.tar.gz                                          [0m
+                                                                               
+[0m
+     [1m[INFO][0m:    six download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mDownloading android[0m[39m
+[1m[INFO][0m:    Skipping android download as no URL is set
+[1m[INFO][0m:    [1m[32mDownloading pyjnius[0m[39m
+[1m[INFO][0m:    [90m->[0m running mkdir -p /home/kivy/Projects/C...(and 58 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/packages/pyjnius[39m
+[1m[INFO][0m:    [90m->[0m running basename https://github.com/kiv...(and 28 more)[0m
+[1m[INFO][0m:    pyjnius download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mDownloading kivy[0m[39m
+[1m[INFO][0m:    [90m->[0m running mkdir -p /home/kivy/Projects/C...(and 55 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/packages/kivy[39m
+[1m[INFO][0m:    [90m->[0m running basename https://github.com/kiv...(and 25 more)[0m
+[1m[INFO][0m:    kivy download already cached, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32m# Building all recipes for arch armeabi-v7a[0m[39m
+[1m[INFO][0m:    [1m[32m# Unpacking recipes[0m[39m
+[1m[INFO][0m:    [1m[32mUnpacking hostpython2 for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running basename https://python.org/ftp...(and 34 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/other_builds/hostpython2/desktop[39m
+[1m[INFO][0m:    hostpython2 is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mUnpacking sdl2_image for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running basename https://www.libsdl.or...(and 52 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/bootstrap_builds/sdl2_gradle-python2/jni[39m
+[1m[INFO][0m:    sdl2_image is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mUnpacking sdl2_mixer for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running basename https://www.libsdl.or...(and 52 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/bootstrap_builds/sdl2_gradle-python2/jni[39m
+[1m[INFO][0m:    sdl2_mixer is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mUnpacking sdl2_ttf for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running basename https://www.libsdl.org...(and 48 more)[0m
+      working: six-1.9.0.tar.gz                                           [0m
+                                                                               
+[0m
+           working: master.zip                                                 [0m
+                                                                               
+[0m
+           working: 1.10.0.zip                                                 [0m
+                                                                               
+[0m
+           working: Python-2.7.2.tar.bz2                                       [0m
+                                                                               
+[0m
+           working: SDL2_image-2.0.1.tar.gz                                    [0m
+                                                                               
+[0m
+           working: SDL2_mixer-2.0.1.tar.gz                                    [0m
+                                                                               
+[0m
+           work[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/bootstrap_builds/sdl2_gradle-python2/jni[39m
+[1m[INFO][0m:    sdl2_ttf is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mUnpacking python2 for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running basename https://python.org/ftp...(and 34 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/other_builds/python2/armeabi-v7a[39m
+[1m[INFO][0m:    python2 is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mUnpacking sdl2 for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running basename https://www.libsdl.org...(and 26 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/bootstrap_builds/sdl2_gradle-python2/jni[39m
+[1m[INFO][0m:    sdl2 is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mUnpacking six for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running basename https://pypi.python.or...(and 40 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/other_builds/six-python2/armeabi-v7a[39m
+[1m[INFO][0m:    six is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [90m->[0m running rm -rf /home/kivy/Projects/Cal...(and 99 more)[0m
+[1m[INFO][0m:    [90m->[0m running cp -a /home/kivy/Projects/Calc...(and 225 more)[0m
+[1m[INFO][0m:    [1m[32mUnpacking pyjnius for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running basename https://github.com/kiv...(and 28 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/other_builds/pyjnius-python2-sdl2/armeabi-v7a[39m
+[1m[INFO][0m:    pyjnius is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mUnpacking kivy for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running basename https://github.com/kiv...(and 25 more)[0m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/other_builds/kivy-python2-sdl2/armeabi-v7a[39m
+[1m[INFO][0m:    kivy is already unpacked, skipping
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32m# Prebuilding recipes[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding hostpython2 for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [90m->[0m running cp /home/kivy/Projects/CalcGam...(and 233 more)[0m
+[1m[INFO][0m:    [1m[32mPrebuilding sdl2_image for armeabi-v7a[0m[39m
+[1m[INFO][0m:    sdl2_image has no prebuild_armeabi_v7a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for sdl2_image[armeabi-v7a][0m[39m
+[1m[INFO][0m:    [1m[32msdl2_image already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding sdl2_mixer for armeabi-v7a[0m[39m
+[1m[INFO][0m:    sdl2_mixer has no prebuild_armeabi_v7a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for sdl2_mixer[armeabi-v7a][0m[39m
+[1m[INFO][0m:    [1m[32msdl2_mixer already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding sdl2_ttf for armeabi-v7a[0m[39m
+[1m[INFO][0m:    sdl2_ttf has no prebuild_armeabi_v7a, skipping
+[1m[INFO][0m:    [1m[32mPrebuilding python2 for armeabi-v7a[0m[39m
+[1m[INFO][0m:    python2 has no prebuild_armeabi_v7a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for python2[armeabi-v7a][0m[39m
+[1m[INFO][0m:    [1m[32mpython2 already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding sdl2 for armeabi-v7a[0m[39m
+[1m[INFO][0m:    sdl2 has no prebuild_armeabi_v7a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for sdl2[armeabi-v7a][0m[39m
+[1m[INFO][0m:    [1m[32msdl2 already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding six for armeabi-v7a[0m[39m
+[1m[INFO][0m:    six has no prebuild_armeabi_v7a, skipping
+[1m[INFO][0m:    [1m[32mPrebuilding android for armeabi-v7a[0m[39m
+[1m[INFO][0m:    android has no prebuild_armeabi_v7a, skipping
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/other_builds/android-python2-sdl2/armeabi-v7a/android[39m
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mPrebuilding pyjnius for armeabi-v7a[0m[39m
+[1m[INFO][0m:    pyjnius has no prebuild_armeabi_v7a, skipping
+[1m[INFO][0m:    [1m[32mApplying patches for pyjnius[armeabi-v7a][0m[39m
+[1m[INFO][0m:    [1m[32mpyjnius already patched, skipping[0m[39m
+[1m[INFO][0m:    [1m[32mPrebuilding kivy for armeabi-v7a[0m[39m
+[1m[INFO][0m:    kivy has no prebuild_armeabi_v7a, skipping
+[1m[INFO][0m:    [1m[32m# Building recipes[0m[39m
+[1m[INFO][0m:    [1m[32mBuilding hostpython2 for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/other_builds/hostpython2/desktop/hostpython2[39m
+[1m[INFO][0m:    hostpython already exists, skipping build
+[1m[INFO][0m:    [36m<- directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain[39m
+[1m[INFO][0m:    [1m[32mBuilding sdl2_image for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [1m[32mBuilding sdl2_mixer for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [1m[32mBuilding sdl2_ttf for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [1m[32mBuilding python2 for armeabi-v7a[0m[39m
+[1m[INFO][0m:    Copying hostpython binary to targetpython folder
+[1m[INFO][0m:    [90m->[0m running cp /home/kivy/Projects/CalcGam...(and 207 more)[0m
+[1m[INFO][0m:    [1m[32mBuilding sdl2 for armeabi-v7a[0m[39m
+[1m[INFO][0m:    [36m-> directory context /home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/bootstrap_builds/sdl2_gradle-python2/jni[39m
+[1m[INFO][0m:    [90m->[0m running ndk-build V=1[0m
+ing: SDL2_ttf-2.0.14.tar.gz                                     [0m
+                                                                               
+[0m
+           working: Python-2.7.2.tar.bz2                                       [0m
+                                                                               
+[0m
+           working: SDL2-2.0.4.tar.gz                                          [0m
+                                                                               
+[0m
+           working: six-1.9.0.tar.gz                                           [0m
+                                                                               
+[0m
+           working: master.zip                                                 [0m
+                                                                               
+[0m
+           working: 1.10.0.zip                                                 [0m
+                                                                               
+[0m
+           working: /homeException in thread background thread for pid 2596:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/sh.py", line 2170, in background_thread
+    handle_exit_code(exit_code)
+  File "/usr/local/lib/python2.7/dist-packages/sh.py", line 1929, in fn
+    return self.command.handle_command_exit_code(exit_code)
+  File "/usr/local/lib/python2.7/dist-packages/sh.py", line 672, in handle_command_exit_code
+    raise exc
+ErrorReturnCode_2: 
+
+  RAN: /home/kivy/.buildozer/android/platform/android-ndk-r9c/ndk-build V=1
+
+  STDOUT:
+/home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/bootstrap_builds/sdl2_gradle-python2/jni/sdl/Android.mk:8: *** Please define SDL_JAVA_PACKAGE_PATH to the path of your Java package with dots replaced with underscores, for example "com_example_SanAngeles".  Stop.
+
+
+  STDERR:
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain/pythonforandroid/toolchain.py", line 978, in <module>
+    main()
+  File "/home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain/pythonforandroid/toolchain.py", line 975, in main
+    ToolchainCL()
+  File "/home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain/pythonforandroid/toolchain.py", line 512, in __init__
+    getattr(self, args.subparser_name.replace('-', '_'))(args)
+  File "/home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain/pythonforandroid/toolchain.py", line 149, in wrapper_func
+    build_dist_from_args(ctx, dist, args)
+  File "/home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain/pythonforandroid/toolchain.py", line 193, in build_dist_from_args
+    build_recipes(build_order, python_modules, ctx)
+  File "pythonforandroid/build.py", line 573, in build_recipes
+  File "/home/kivy/Projects/CalcGame/.buildozer/android/platform/python-for-android-new-toolchain/pythonforandroid/recipes/sdl2/__init__.py", line 32, in build_arch
+    shprint(sh.ndk_build, "V=1", _env=env)
+  File "pythonforandroid/logger.py", line 175, in shprint
+  File "/usr/local/lib/python2.7/dist-packages/sh.py", line 720, in next
+    self.wait()
+  File "/usr/local/lib/python2.7/dist-packages/sh.py", line 651, in wait
+    self.handle_command_exit_code(exit_code)
+  File "/usr/local/lib/python2.7/dist-packages/sh.py", line 672, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_2: 
+
+  RAN: /home/kivy/.buildozer/android/platform/android-ndk-r9c/ndk-build V=1
+
+  STDOUT:
+/home/kivy/Projects/CalcGame/.buildozer/android/platform/build/build/bootstrap_builds/sdl2_gradle-python2/jni/sdl/Android.mk:8: *** Please define SDL_JAVA_PACKAGE_PATH to the path of your Java package with dots replaced with underscores, for example "com_example_SanAngeles".  Stop.
+
+
+  STDERR:
+
+/kivy/Projects/CalcGame/.buildozer/a...(and 241 more) [0m
+                                                                               
+[39m[0m[31m# Command failed: /usr/bin/python -m pythonforandroid.toolchain create --dist_name=calcgame --bootstrap=sdl2 --requirements=kivy,android --arch armeabi-v7a --copy-libs --color=always --storage-dir=/home/kivy/Projects/CalcGame/.buildozer/android/platform/build[39m[0m
+[39m[0m[31m# [39m[0m
+[39m[0m[31m# Buildozer failed to execute the last command[39m[0m
+[39m[0m[31m# The error might be hidden in the log above this error[39m[0m
+[39m[0m[31m# Please read the full log, and search for it before[39m[0m
+[39m[0m[31m# raising an issue with buildozer itself.[39m[0m
+[39m[0m[31m# In case of a bug report, please add a full log with log_level = 2[39m[0m
+[0m]0;kivy@kivyvm: ~/Projects/CalcGame[01;32mkivy@kivyvm[00m:[01;34m~/Projects/CalcGame[00m$ exit
+exit
+
+Script done on Mon 19 Mar 2018 07:55:49 AM UTC
